@@ -42,7 +42,7 @@ const Navbar = () => {
         </li>
         <li onClick={() => setActiveMenu("cart")}>
           <Link to='/cart'>
-            <img src={activeMenu === "cart" ? cart_icon_dark : cart_icon} alt="" className='cart' />
+            <img src={theme === "dark" ? cart_icon : cart_icon_dark} alt="" className='cart' />
             {activeMenu === "cart" && <hr className="active" />}
           </Link>
         </li>
